@@ -12,14 +12,42 @@
             >
         <activity android:name=".MainActivity"/>
         <activity android:name=".ViewActivity">
+        </activity>
+        <activity android:name=".HandlerActivity"/>
+        <activity android:name=".v1020.SharedPreferenceTestActivity">
+        </activity>
+        <activity android:name=".v1028.ImageActivity">
+        </activity>
+        <activity
+                android:name=".v1029.StatusBarActivity"
+                android:theme="@style/AppTheme.Translucent"
+                >
+        </activity>
+        <activity android:name=".v1103.AVloadingDemo">
+        </activity>
+        <activity android:name=".v1111.SimpleShareActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".HandlerActivity"/>
-        <activity android:name=".v1020.SharedPreferenceTestActivity">
+        <activity android:name=".v1111.ReceiveDataActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
         </activity>
     </application>
 
